@@ -36,4 +36,9 @@ variable "vpc_db_subnets" {
 
 variable "vpc_tags" {
   description = "etiquetas para poner al vpc peering para api - data vpc"
+  type        = map(string)
+  default = {
+    "Name"      = "vpc_proyecto"
+    "CreatedBy" = "CamiloZer0"
+  }
 }
