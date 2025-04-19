@@ -19,7 +19,7 @@ variable "vpc_azs" {
 variable "vpc_public_subnets" {
   description = "subnets publicas"
   type        = list(string)
-  default     = ["10.0.20.0/24", "10.0.21.1/24", "10.0.22.2/24"]
+  default     = ["10.0.20.0/24", "10.0.21.0/24", "10.0.22.0/24"]
 }
 
 variable "vpc_private_subnet" {
@@ -34,11 +34,3 @@ variable "vpc_db_subnets" {
   default     = ["10.0.40.0/24", "10.0.41.0/24", "10.0.42.0/24"]
 }
 
-variable "vpc_tags" {
-  description = "etiquetas para poner al vpc peering para api - data vpc"
-  type        = map(string)
-  default = {
-    "Name"      = "vpc_proyecto"
-    "CreatedBy" = "CamiloZer0"
-  }
-}
