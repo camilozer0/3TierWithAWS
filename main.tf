@@ -1,6 +1,6 @@
 # Creacion de la VPC
 module "vpc" {
-  source              = "./modules/vpc"
+  source              = "./modules/network"
   vpc_name            = var.vpc_name
   vpc_cidr            = var.vpc_cidr
   vpc_azs             = var.vpc_azs
